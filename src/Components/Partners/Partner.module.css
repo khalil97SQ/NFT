@@ -1,0 +1,34 @@
+.Partners_wrapper {
+  width: 100%;
+  align-items: normal !important;
+  position: relative;
+}
+
+.Partners_wrapper::after {
+  content: "";
+  position: absolute;
+  top: 25%;
+  left: 12%;
+  height: 50%;
+  width: 10%;
+  background: linear-gradient(90deg, #040b11, transparent);
+}
+.Partners_wrapper::before {
+  content: "";
+  position: absolute;
+  top: 25%;
+  right: 12%;
+  height: 50%;
+  width: 10%;
+  background: linear-gradient(270deg, #040b11, transparent);
+  z-index: 2;
+}
+
+@media screen and (max-width: 1400px) {
+  .Partners_wrapper::after {
+    left: 10%;
+  }
+  .Partners_wrapper::before {
+    right: 10%;
+  }
+}

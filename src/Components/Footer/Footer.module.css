@@ -1,0 +1,128 @@
+.Footer_wrapper {
+  background: url(./../../assets/bs-section.jpg) no-repeat center;
+  position: relative;
+  z-index: 1;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr) !important;
+  gap: 30px;
+}
+
+.Footer_wrapper::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background: rgba(4, 11, 17, 0.7);
+  z-index: -1;
+}
+
+.Footer_wrapper h2 {
+  font-size: 28px;
+  color: #fff;
+  font-weight: 500;
+  text-shadow: 0 5px 8px rgba(255, 255, 255, 0.5);
+  margin-bottom: 15px;
+}
+
+.Footer_wrapper h2 span {
+  color: var(--primary-color);
+  text-shadow: 0 5px 8px rgba(33, 231, 135, 0.4);
+}
+
+.Footer_wrapper p {
+  color: #fff;
+}
+
+.footerLinks {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.footerLinks h3 {
+  color: var(--primary-color);
+  font-size: 25px;
+  text-shadow: 0 5px 8px rgba(33, 231, 135, 0.4);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.footerLinks p a {
+  color: rgba(131, 131, 131, 1);
+  font-size: 15px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 10px 0;
+  transition: 0.3s;
+}
+
+.footerLinks p:hover a {
+  color: #fff;
+}
+
+.InputWrapper {
+  height: 45px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.InputWrapper input {
+  height: 100%;
+  width: 60%;
+  padding: 0 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: none;
+  color: #fff;
+  outline: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.InputWrapper button {
+  width: 40%;
+  box-shadow: unset;
+  font-size: 20px;
+  background: var(--primary-color);
+  color: #1e1e1e;
+}
+
+.social {
+  display: flex;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.social i {
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary-color);
+  color: #1e1e1e;
+  font-size: 24px;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 50%;
+}
+
+.social i:hover {
+  color: #fff;
+  box-shadow: 0 4px 15px rgba(255, 255, 255);
+  transform: translateY(-5px);
+}
+
+@media screen and (max-width: 1100px) {
+  .Footer_wrapper {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .Footer_wrapper {
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+}

@@ -1,0 +1,124 @@
+.About_wrapper {
+  align-items: center !important;
+}
+
+.About_wrapper p {
+  text-align: center;
+  color: #fff;
+}
+
+.section_paragraph {
+  width: 60%;
+  margin: 20px 0;
+  color: rgba(131, 131, 131, 1) !important;
+  font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.Counters {
+  display: flex;
+  gap: 30px;
+}
+
+.Counters p {
+  text-align: center !important;
+}
+
+.AboutCards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  margin-top: 80px;
+  padding: 0 20px;
+}
+
+.AboutCards .About_card {
+  position: relative;
+  transition: 0.6s;
+  padding-top: 60px !important;
+  z-index: 1;
+}
+
+.AboutCards .About_card::after {
+  content: attr(count);
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  font-weight: 700;
+  color: #21e78737;
+  font-size: 150px;
+  line-height: 120px;
+  z-index: -1;
+}
+
+.AboutCards .About_card:hover::after {
+  color: #21e787;
+}
+
+.AboutCards .About_card:hover {
+  transform: translateY(-8px) scale(1.02);
+}
+
+.AboutCards .About_card h2 {
+  color: #fff;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.AboutCards .About_card p {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+@media screen and (max-width: 1600px) {
+  .AboutCards .About_card {
+    padding-top: 65px !important;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .AboutCards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .AboutCards .About_card {
+    padding-top: 75px !important;
+  }
+
+  .section_paragraph {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .AboutCards {
+    padding: 0 20px;
+  }
+
+  .section_paragraph {
+    width: 100%;
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .AboutCards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .Counters {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .Counters {
+    align-items: center;
+    flex-direction: column;
+  }
+}
