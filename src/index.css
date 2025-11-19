@@ -8,8 +8,8 @@
   list-style: none;
   text-decoration: none;
 
-  /* font-family: "Bakbak One"; */
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Bakbak One";
+  /* font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; */
 
   scrollbar-width: thin;
   scroll-behavior: smooth;

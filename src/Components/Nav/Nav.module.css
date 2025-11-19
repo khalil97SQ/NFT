@@ -30,6 +30,7 @@
 
 .Nav_wrapper ul li a {
   color: #fff;
+  font-size: 18px;
 }
 
 .Nav_wrapper ul li:hover a {
