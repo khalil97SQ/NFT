@@ -21,10 +21,9 @@ The goal of this project is to **practice displaying images using a slider**.
 
 ## How to Run
 
-1. Install dependencies:
-   ```bash
-   npm install
-   ```
-   ```
-   npm run dev
-   ```
+1. Install dependencies and start the development server:
+
+```bash
+npm install
+npm run dev
+```
