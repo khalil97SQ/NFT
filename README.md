@@ -1,11 +1,11 @@
-# NFT Project - Training Image Gallery
+# NFT Project
 
 This project is a **static NFT image gallery** created as a **training exercise to learn React and Vite**.  
 The goal of this project is to **practice displaying images using a slider**.
 
 ## Project Preview
 
-![NFT Screen](assets/NFT%20Screen.png)
+![NFT Screen](./src/assets/NFT%20Screen.jpeg)
 
 ## Technologies Used
 
